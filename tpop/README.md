@@ -11,5 +11,7 @@ obligation.
 - `shakedown_pairs_samples.json`: a shakedown run on the page's 7 built-in samples (110 pairs).
   These samples are instrument checks only and must not be used as test passages.
 
+- `predictions_draft_v0.1.md`: TPOP's draft prediction for each of the 60 devices, for review before freezing.
+
 Status: design draft. No TPOP predictions are frozen, no test passages are selected, and no
 reader has seen any pair.
