@@ -1,0 +1,1737 @@
+{
+ "generated": "2026-11-11T13:51:10.626Z",
+ "seed": 1,
+ "passages": [
+  {
+   "id": "austen",
+   "attribution": "Jane Austen, Pride and Prejudice (1813), opening. Project Gutenberg ebook 1342. Public domain.",
+   "text": "It is a truth universally acknowledged, that a single man in possession of a good fortune must be in want of a wife. However little known the feelings or views of such a man may be on his first entering a neighbourhood, this truth is so well fixed in the minds of the surrounding families, that he is considered as the rightful property of some one or other of their daughters.",
+   "profile": [
+    0,
+    0.26059132573217075,
+    0,
+    0.02806067172264354,
+    0,
+    0,
+    0.12804097311139565
+   ],
+   "pairs": [
+    {
+     "pair": "austen-001",
+     "control": "C",
+     "to": 0,
+     "device": "C-adjective",
+     "converse_stance": false,
+     "converse_fields": [
+      "Scope"
+     ],
+     "slot": 1,
+     "before": "However little known the feelings or views of such a man may be on his first entering a neighbourhood, this truth is so well fixed in the minds of the surrounding families, that he is considered as the rightful property of some one or other of their daughters.",
+     "after": "However little known the feelings or views of such a man may be on his first entering a neighbourhood, this truth is so well fixed in the minds of the surrounding families, that he is considered as the property of some one or other of their daughters.",
+     "converse_note": "\"rightful\" dropped from \"property\"; the thing stays"
+    },
+    {
+     "pair": "austen-002",
+     "control": "C",
+     "to": 0,
+     "device": "C-adjective",
+     "converse_stance": false,
+     "converse_fields": [
+      "Scope"
+     ],
+     "slot": 1,
+     "before": "However little known the feelings or views of such a man may be on his first entering a neighbourhood, this truth is so well fixed in the minds of the surrounding families, that he is considered as the property of some one or other of their daughters.",
+     "after": "However little known the feelings or views of such a man may be on his first entering a neighbourhood, this truth is so well fixed in the minds of the families, that he is considered as the property of some one or other of their daughters.",
+     "converse_note": "\"surrounding\" dropped from \"families\"; the thing stays"
+    },
+    {
+     "pair": "austen-003",
+     "control": "C",
+     "to": 0,
+     "device": "C-adjective",
+     "converse_stance": false,
+     "converse_fields": [
+      "Scope"
+     ],
+     "slot": 0,
+     "before": "It is a truth universally acknowledged, that a single man in possession of a good fortune must be in want of a wife.",
+     "after": "It is a truth universally acknowledged, that a single man in possession of a fortune must be in want of a wife.",
+     "converse_note": "\"good\" dropped from \"fortune\"; the thing stays"
+    },
+    {
+     "pair": "austen-004",
+     "control": "C",
+     "to": 1,
+     "device": "C+gloss",
+     "converse_stance": false,
+     "converse_fields": [
+      "Scope"
+     ],
+     "slot": 1,
+     "before": "However little known the feelings or views of such a man may be on his first entering a neighbourhood, this truth is so well fixed in the minds of the surrounding families, that he is considered as the rightful property of some one or other of their daughters.",
+     "after": "However little known the feelings or views of such a man may be on his first entering a neighbourhood, a surrounding or nearby region, this truth is so well fixed in the minds of the surrounding families, that he is considered as the rightful property of some one or other of their daughters.",
+     "converse_note": "the dictionary's sense of \"neighbourhood\""
+    },
+    {
+     "pair": "austen-005",
+     "control": "P",
+     "to": 1,
+     "device": "P+frame",
+     "converse_stance": true,
+     "converse_fields": [
+      "Reader relation",
+      "Agency",
+      "Access",
+      "Warrant"
+     ],
+     "slot": 0,
+     "before": "It is a truth universally acknowledged, that a single man in possession of a good fortune must be in want of a wife.",
+     "after": "We report that it is a truth universally acknowledged, that a single man in possession of a good fortune must be in want of a wife.",
+     "converse_note": "the narrator takes responsibility for the statement; no act is attributed to the narrator"
+    },
+    {
+     "pair": "austen-006",
+     "control": "P",
+     "to": 1,
+     "device": "P+account",
+     "converse_stance": true,
+     "converse_fields": [
+      "Reader relation",
+      "Warrant"
+     ],
+     "slot": 1,
+     "before": "",
+     "after": "That is what we found.",
+     "converse_note": "the narrator closes on its own account"
+    },
+    {
+     "pair": "austen-007",
+     "control": "R",
+     "to": 1,
+     "device": "R+word",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation"
+     ],
+     "slot": 0,
+     "before": "It is a truth universally acknowledged, that a single man in possession of a good fortune must be in want of a wife.",
+     "after": "It is a truth universally admitted, that a single man in possession of a good fortune must be in want of a wife.",
+     "converse_note": "\"acknowledged\" becomes the shorter \"admitted\", the dictionary's word for the same sense"
+    },
+    {
+     "pair": "austen-008",
+     "control": "R",
+     "to": 1,
+     "device": "R+word",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation"
+     ],
+     "slot": 1,
+     "before": "However little known the feelings or views of such a man may be on his first entering a neighbourhood, this truth is so well fixed in the minds of the surrounding families, that he is considered as the rightful property of some one or other of their daughters.",
+     "after": "However little known the feelings or views of such a man may be on his first entering a neighbourhood, this truth is so well fixed in the minds of the surrounding families, that he is viewed as the rightful property of some one or other of their daughters.",
+     "converse_note": "\"considered\" becomes the shorter \"viewed\", the dictionary's word for the same sense"
+    },
+    {
+     "pair": "austen-009",
+     "control": "T",
+     "to": 1,
+     "device": "T+sofar",
+     "converse_stance": true,
+     "converse_fields": [
+      "Warrant",
+      "Reflexive reach"
+     ],
+     "slot": 0,
+     "before": "It is a truth universally acknowledged, that a single man in possession of a good fortune must be in want of a wife.",
+     "after": "For now, it is a truth universally acknowledged, that a single man in possession of a good fortune must be in want of a wife.",
+     "converse_note": "the finding is held open"
+    },
+    {
+     "pair": "austen-010",
+     "control": "T",
+     "to": 1,
+     "device": "T+close",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation"
+     ],
+     "slot": 1,
+     "before": "",
+     "after": "What follows from this?",
+     "converse_note": "the finding opens onto the next question"
+    },
+    {
+     "pair": "austen-011",
+     "control": "J",
+     "to": 0,
+     "device": "J-word",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation"
+     ],
+     "slot": 0,
+     "before": "It is a truth universally acknowledged, that a single man in possession of a good fortune must be in want of a wife.",
+     "after": "It is a truth universally admitted, that a single man in possession of a good fortune must be in want of a wife.",
+     "converse_note": "\"acknowledged\" becomes the plainer \"admitted\", the dictionary's word for the same sense"
+    },
+    {
+     "pair": "austen-012",
+     "control": "J",
+     "to": 0,
+     "device": "J-word",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation"
+     ],
+     "slot": 1,
+     "before": "However little known the feelings or views of such a man may be on his first entering a neighbourhood, this truth is so well fixed in the minds of the surrounding families, that he is considered as the rightful property of some one or other of their daughters.",
+     "after": "However little known the feelings or views of such a man may be on his first entering a neighbourhood, this truth is so well fixed in the minds of the surrounding families, that he is viewed as the rightful property of some one or other of their daughters.",
+     "converse_note": "\"considered\" becomes the plainer \"viewed\", the dictionary's word for the same sense"
+    },
+    {
+     "pair": "austen-013",
+     "control": "J",
+     "to": 1,
+     "device": "J+word",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation"
+     ],
+     "slot": 1,
+     "before": "However little known the feelings or views of such a man may be on his first entering a neighbourhood, this truth is so well fixed in the minds of the surrounding families, that he is considered as the rightful property of some one or other of their daughters.",
+     "after": "However little known the feelings or views of such a man may be on his first entering a vicinity, this truth is so well fixed in the minds of the surrounding families, that he is considered as the rightful property of some one or other of their daughters.",
+     "converse_note": "\"neighbourhood\" becomes the more exact \"vicinity\", the dictionary's word for the same sense"
+    },
+    {
+     "pair": "austen-014",
+     "control": "J",
+     "to": 1,
+     "device": "J+word",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation"
+     ],
+     "slot": 1,
+     "before": "However little known the feelings or views of such a man may be on his first entering a vicinity, this truth is so well fixed in the minds of the surrounding families, that he is considered as the rightful property of some one or other of their daughters.",
+     "after": "However little known the feelings or perspectives of such a man may be on his first entering a vicinity, this truth is so well fixed in the minds of the surrounding families, that he is considered as the rightful property of some one or other of their daughters.",
+     "converse_note": "\"views\" becomes the more exact \"perspectives\", the dictionary's word for the same sense"
+    },
+    {
+     "pair": "austen-015",
+     "control": "J",
+     "to": 1,
+     "device": "J+point",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation",
+      "Reader relation"
+     ],
+     "slot": 0,
+     "before": "It is a truth universally acknowledged, that a single man in possession of a good fortune must be in want of a wife.",
+     "after": "The point is that it is a truth universally acknowledged, that a single man in possession of a good fortune must be in want of a wife.",
+     "converse_note": "the judgment is marked as the point"
+    }
+   ]
+  },
+  {
+   "id": "melville",
+   "attribution": "Herman Melville, Moby-Dick (1851), opening of chapter 1. Project Gutenberg ebook 2701. Public domain.",
+   "text": "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world. It is a way I have of driving off the spleen and regulating the circulation.",
+   "profile": [
+    0.9324324324324323,
+    0.6804491272882077,
+    0.8666666666666667,
+    0.9972157256342684,
+    0,
+    0,
+    0
+   ],
+   "pairs": [
+    {
+     "pair": "melville-001",
+     "control": "C",
+     "to": 0,
+     "device": "C-adjective",
+     "converse_stance": false,
+     "converse_fields": [
+      "Scope"
+     ],
+     "slot": 1,
+     "before": "Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
+     "after": "Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the part of the world.",
+     "converse_note": "\"watery\" dropped from \"part\"; the thing stays"
+    },
+    {
+     "pair": "melville-002",
+     "control": "C",
+     "to": 0,
+     "device": "C-word",
+     "converse_stance": false,
+     "converse_fields": [
+      "Scope"
+     ],
+     "slot": 1,
+     "before": "Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the part of the world.",
+     "after": "Some years ago—never mind how long precisely—having little or no money in my container, and nothing particular to interest me on shore, I thought I would sail about a little and see the part of the world.",
+     "converse_note": "\"purse\" is named by the broader \"container\", the dictionary's term above it"
+    },
+    {
+     "pair": "melville-003",
+     "control": "C",
+     "to": 1,
+     "device": "C+that",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation",
+      "Reader relation"
+     ],
+     "slot": 1,
+     "before": "Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
+     "after": "Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of that world.",
+     "converse_note": "\"the world\" pointed at as \"that world\""
+    },
+    {
+     "pair": "melville-004",
+     "control": "C",
+     "to": 1,
+     "device": "C+that",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation",
+      "Reader relation"
+     ],
+     "slot": 2,
+     "before": "It is a way I have of driving off the spleen and regulating the circulation.",
+     "after": "It is a way I have of driving off that spleen and regulating the circulation.",
+     "converse_note": "\"the spleen\" pointed at as \"that spleen\""
+    },
+    {
+     "pair": "melville-005",
+     "control": "P",
+     "to": 1,
+     "device": "P+account",
+     "converse_stance": true,
+     "converse_fields": [
+      "Reader relation",
+      "Warrant"
+     ],
+     "slot": 2,
+     "before": "",
+     "after": "That is what I note.",
+     "converse_note": "the narrator closes on its own account"
+    },
+    {
+     "pair": "melville-006",
+     "control": "R",
+     "to": 0,
+     "device": "R-undash",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation"
+     ],
+     "slot": 1,
+     "before": "Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
+     "after": "Some years ago, never mind how long precisely, having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
+     "converse_note": "dashes become commas and semicolons"
+    },
+    {
+     "pair": "melville-007",
+     "control": "T",
+     "to": 1,
+     "device": "T+sofar",
+     "converse_stance": true,
+     "converse_fields": [
+      "Warrant",
+      "Reflexive reach"
+     ],
+     "slot": 2,
+     "before": "It is a way I have of driving off the spleen and regulating the circulation.",
+     "after": "For now, it is a way I have of driving off the spleen and regulating the circulation.",
+     "converse_note": "the finding is held open"
+    },
+    {
+     "pair": "melville-008",
+     "control": "T",
+     "to": 1,
+     "device": "T+close",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation"
+     ],
+     "slot": 2,
+     "before": "",
+     "after": "What follows from this?",
+     "converse_note": "the finding opens onto the next question"
+    },
+    {
+     "pair": "melville-009",
+     "control": "J",
+     "to": 1,
+     "device": "J+point",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation",
+      "Reader relation"
+     ],
+     "slot": 1,
+     "before": "Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
+     "after": "The point: some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
+     "converse_note": "the judgment is marked as the point"
+    },
+    {
+     "pair": "melville-010",
+     "control": "J",
+     "to": 1,
+     "device": "J+point",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation",
+      "Reader relation"
+     ],
+     "slot": 2,
+     "before": "It is a way I have of driving off the spleen and regulating the circulation.",
+     "after": "The point: it is a way I have of driving off the spleen and regulating the circulation.",
+     "converse_note": "the judgment is marked as the point"
+    }
+   ]
+  },
+  {
+   "id": "dickens",
+   "attribution": "Charles Dickens, A Tale of Two Cities (1859), opening paragraph. Project Gutenberg ebook 98. Public domain.",
+   "text": "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way--in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only.",
+   "profile": [
+    0,
+    0.15654425612052728,
+    0.5,
+    0.05,
+    0,
+    0,
+    0
+   ],
+   "pairs": [
+    {
+     "pair": "dickens-001",
+     "control": "C",
+     "to": 0,
+     "device": "C-adjective",
+     "converse_stance": false,
+     "converse_fields": [
+      "Scope"
+     ],
+     "slot": 0,
+     "before": "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way--in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only.",
+     "after": "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way--in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the degree of comparison only.",
+     "converse_note": "\"superlative\" dropped from \"degree\"; the thing stays"
+    },
+    {
+     "pair": "dickens-002",
+     "control": "P",
+     "to": 1,
+     "device": "P+account",
+     "converse_stance": true,
+     "converse_fields": [
+      "Reader relation",
+      "Warrant"
+     ],
+     "slot": 0,
+     "before": "",
+     "after": "That is what we found.",
+     "converse_note": "the narrator closes on its own account"
+    },
+    {
+     "pair": "dickens-003",
+     "control": "R",
+     "to": 0,
+     "device": "R-undash",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation"
+     ],
+     "slot": 0,
+     "before": "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way--in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only.",
+     "after": "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way; in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only.",
+     "converse_note": "dashes become commas and semicolons"
+    },
+    {
+     "pair": "dickens-004",
+     "control": "R",
+     "to": 1,
+     "device": "R+genitive",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation"
+     ],
+     "slot": 0,
+     "before": "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way--in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only.",
+     "after": "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was Darkness’s season, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way--in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only.",
+     "converse_note": "\"the season of Darkness\" compressed to \"Darkness’s season\""
+    },
+    {
+     "pair": "dickens-005",
+     "control": "R",
+     "to": 1,
+     "device": "R+genitive",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation"
+     ],
+     "slot": 0,
+     "before": "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was Darkness’s season, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way--in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only.",
+     "after": "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was Light’s season, it was Darkness’s season, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way--in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only.",
+     "converse_note": "\"the season of Light\" compressed to \"Light’s season\""
+    },
+    {
+     "pair": "dickens-006",
+     "control": "R",
+     "to": 1,
+     "device": "R+split",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation"
+     ],
+     "slot": 0,
+     "before": "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was Light’s season, it was Darkness’s season, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way--in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only.",
+     "after": "It was the best of times. It was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was Light’s season, it was Darkness’s season, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way--in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only.",
+     "converse_note": "split where both halves stand as sentences"
+    },
+    {
+     "pair": "dickens-007",
+     "control": "T",
+     "to": 1,
+     "device": "T+close",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation"
+     ],
+     "slot": 0,
+     "before": "",
+     "after": "What do we owe next?",
+     "converse_note": "the finding opens onto the next question"
+    },
+    {
+     "pair": "dickens-008",
+     "control": "J",
+     "to": 1,
+     "device": "J+most",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation"
+     ],
+     "slot": 0,
+     "before": "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way--in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only.",
+     "after": "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way--in short, the period was so far like the present period, that some of its most noisy authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only.",
+     "converse_note": "\"noisiest\" spelled out as \"most noisy\""
+    },
+    {
+     "pair": "dickens-009",
+     "control": "J",
+     "to": 1,
+     "device": "J+point",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation",
+      "Reader relation"
+     ],
+     "slot": 0,
+     "before": "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way--in short, the period was so far like the present period, that some of its most noisy authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only.",
+     "after": "What we stress is that it was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way--in short, the period was so far like the present period, that some of its most noisy authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only.",
+     "converse_note": "the judgment is marked as the point"
+    }
+   ]
+  },
+  {
+   "id": "darwin",
+   "attribution": "Charles Darwin, On the Origin of Species (1859), opening of the introduction. Project Gutenberg ebook 1228. Public domain.",
+   "text": "When on board H.M.S. ‘Beagle,’ as naturalist, I was much struck with certain facts in the distribution of the inhabitants of South America, and in the geological relations of the present to the past inhabitants of that continent. These facts seemed to me to throw some light on the origin of species—that mystery of mysteries, as it has been called by one of our greatest philosophers. On my return home, it occurred to me, in 1837, that something might perhaps be made out on this question by patiently accumulating and reflecting on all sorts of facts which could possibly have any bearing on it.",
+   "profile": [
+    0.2698412698412698,
+    0.5210537918871252,
+    0.43333333333333335,
+    0,
+    0,
+    0,
+    0
+   ],
+   "pairs": [
+    {
+     "pair": "darwin-001",
+     "control": "A",
+     "to": 1,
+     "device": "A+steps",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation"
+     ],
+     "slot": 0,
+     "before": "When on board H.M.S. ‘Beagle,’ as naturalist, I was much struck with certain facts in the distribution of the inhabitants of South America, and in the geological relations of the present to the past inhabitants of that continent.",
+     "after": "First, when on board H.M.S. ‘Beagle,’ as naturalist, I was much struck with certain facts in the distribution of the inhabitants of South America, and in the geological relations of the present to the past inhabitants of that continent.",
+     "converse_note": "the reasoning is taken step by step"
+    },
+    {
+     "pair": "darwin-002",
+     "control": "A",
+     "to": 1,
+     "device": "A+steps",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation"
+     ],
+     "slot": 1,
+     "before": "These facts seemed to me to throw some light on the origin of species—that mystery of mysteries, as it has been called by one of our greatest philosophers.",
+     "after": "Second, these facts seemed to me to throw some light on the origin of species—that mystery of mysteries, as it has been called by one of our greatest philosophers.",
+     "converse_note": "the reasoning is taken step by step"
+    },
+    {
+     "pair": "darwin-003",
+     "control": "A",
+     "to": 1,
+     "device": "A+steps",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation"
+     ],
+     "slot": 2,
+     "before": "On my return home, it occurred to me, in 1837, that something might perhaps be made out on this question by patiently accumulating and reflecting on all sorts of facts which could possibly have any bearing on it.",
+     "after": "Third, on my return home, it occurred to me, in 1837, that something might perhaps be made out on this question by patiently accumulating and reflecting on all sorts of facts which could possibly have any bearing on it.",
+     "converse_note": "the reasoning is taken step by step"
+    },
+    {
+     "pair": "darwin-004",
+     "control": "C",
+     "to": 0,
+     "device": "C-manner",
+     "converse_stance": false,
+     "converse_fields": [
+      "Scope"
+     ],
+     "slot": 2,
+     "before": "On my return home, it occurred to me, in 1837, that something might perhaps be made out on this question by patiently accumulating and reflecting on all sorts of facts which could possibly have any bearing on it.",
+     "after": "On my return home, it occurred to me, in 1837, that something might perhaps be made out on this question by accumulating and reflecting on all sorts of facts which could possibly have any bearing on it.",
+     "converse_note": "\"patiently\" dropped: the act is named without its manner"
+    },
+    {
+     "pair": "darwin-005",
+     "control": "C",
+     "to": 0,
+     "device": "C-word",
+     "converse_stance": false,
+     "converse_fields": [
+      "Scope"
+     ],
+     "slot": 2,
+     "before": "On my return home, it occurred to me, in 1837, that something might perhaps be made out on this question by accumulating and reflecting on all sorts of facts which could possibly have any bearing on it.",
+     "after": "On my return residence, it occurred to me, in 1837, that something might perhaps be made out on this question by accumulating and reflecting on all sorts of facts which could possibly have any bearing on it.",
+     "converse_note": "\"home\" is named by the broader \"residence\", the dictionary's term above it"
+    },
+    {
+     "pair": "darwin-006",
+     "control": "C",
+     "to": 1,
+     "device": "C+that",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation",
+      "Reader relation"
+     ],
+     "slot": 1,
+     "before": "These facts seemed to me to throw some light on the origin of species—that mystery of mysteries, as it has been called by one of our greatest philosophers.",
+     "after": "These facts seemed to me to throw some light on that origin of species—that mystery of mysteries, as it has been called by one of our greatest philosophers.",
+     "converse_note": "\"the origin\" pointed at as \"that origin\""
+    },
+    {
+     "pair": "darwin-007",
+     "control": "C",
+     "to": 1,
+     "device": "C+gloss",
+     "converse_stance": false,
+     "converse_fields": [
+      "Scope"
+     ],
+     "slot": 0,
+     "before": "When on board H.M.S. ‘Beagle,’ as naturalist, I was much struck with certain facts in the distribution of the inhabitants of South America, and in the geological relations of the present to the past inhabitants of that continent.",
+     "after": "When on board H.M.S. ‘Beagle,’ as naturalist, I was much struck with certain facts in the distribution of the inhabitants of South America, and in the geological relations of the present to the past inhabitants of that continent, one of the large landmasses of the earth.",
+     "converse_note": "the dictionary's sense of \"continent\""
+    },
+    {
+     "pair": "darwin-008",
+     "control": "P",
+     "to": 1,
+     "device": "P+account",
+     "converse_stance": true,
+     "converse_fields": [
+      "Reader relation",
+      "Warrant"
+     ],
+     "slot": 2,
+     "before": "",
+     "after": "That is what I note.",
+     "converse_note": "the narrator closes on its own account"
+    },
+    {
+     "pair": "darwin-009",
+     "control": "R",
+     "to": 1,
+     "device": "R+word",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation"
+     ],
+     "slot": 0,
+     "before": "When on board H.M.S. ‘Beagle,’ as naturalist, I was much struck with certain facts in the distribution of the inhabitants of South America, and in the geological relations of the present to the past inhabitants of that continent.",
+     "after": "When on board H.M.S. ‘Beagle,’ as naturalist, I was much struck with certain facts in the distribution of the dwellers of South America, and in the geological relations of the present to the past inhabitants of that continent.",
+     "converse_note": "\"inhabitants\" becomes the shorter \"dwellers\", the dictionary's word for the same sense"
+    },
+    {
+     "pair": "darwin-010",
+     "control": "R",
+     "to": 1,
+     "device": "R+word",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation"
+     ],
+     "slot": 0,
+     "before": "When on board H.M.S. ‘Beagle,’ as naturalist, I was much struck with certain facts in the distribution of the dwellers of South America, and in the geological relations of the present to the past inhabitants of that continent.",
+     "after": "When on board H.M.S. ‘Beagle,’ as naturalist, I was much struck with certain facts in the distribution of the dwellers of South America, and in the geological relations of the present to the past dwellers of that continent.",
+     "converse_note": "\"inhabitants\" becomes the shorter \"dwellers\", the dictionary's word for the same sense"
+    },
+    {
+     "pair": "darwin-011",
+     "control": "R",
+     "to": 1,
+     "device": "R+word",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation"
+     ],
+     "slot": 1,
+     "before": "These facts seemed to me to throw some light on the origin of species—that mystery of mysteries, as it has been called by one of our greatest philosophers.",
+     "after": "These facts seemed to me to throw some light on the source of species—that mystery of mysteries, as it has been called by one of our greatest philosophers.",
+     "converse_note": "\"origin\" becomes the shorter \"source\", the dictionary's word for the same sense"
+    },
+    {
+     "pair": "darwin-012",
+     "control": "R",
+     "to": 1,
+     "device": "R+word",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation"
+     ],
+     "slot": 2,
+     "before": "On my return home, it occurred to me, in 1837, that something might perhaps be made out on this question by patiently accumulating and reflecting on all sorts of facts which could possibly have any bearing on it.",
+     "after": "On my return home, it occurred to me, in 1837, that something might perhaps be made out on this question by patiently collecting and reflecting on all sorts of facts which could possibly have any bearing on it.",
+     "converse_note": "\"accumulating\" becomes the shorter \"collecting\", the dictionary's word for the same sense"
+    },
+    {
+     "pair": "darwin-013",
+     "control": "T",
+     "to": 1,
+     "device": "T+close",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation"
+     ],
+     "slot": 2,
+     "before": "",
+     "after": "What follows from this?",
+     "converse_note": "the finding opens onto the next question"
+    },
+    {
+     "pair": "darwin-014",
+     "control": "J",
+     "to": 1,
+     "device": "J+point",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation",
+      "Reader relation"
+     ],
+     "slot": 0,
+     "before": "When on board H.M.S. ‘Beagle,’ as naturalist, I was much struck with certain facts in the distribution of the inhabitants of South America, and in the geological relations of the present to the past inhabitants of that continent.",
+     "after": "Note that when on board H.M.S. ‘Beagle,’ as naturalist, I was much struck with certain facts in the distribution of the inhabitants of South America, and in the geological relations of the present to the past inhabitants of that continent.",
+     "converse_note": "the judgment is marked as the point"
+    },
+    {
+     "pair": "darwin-015",
+     "control": "J",
+     "to": 1,
+     "device": "J+point",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation",
+      "Reader relation"
+     ],
+     "slot": 2,
+     "before": "On my return home, it occurred to me, in 1837, that something might perhaps be made out on this question by patiently accumulating and reflecting on all sorts of facts which could possibly have any bearing on it.",
+     "after": "Note that on my return home, it occurred to me, in 1837, that something might perhaps be made out on this question by patiently accumulating and reflecting on all sorts of facts which could possibly have any bearing on it.",
+     "converse_note": "the judgment is marked as the point"
+    }
+   ]
+  },
+  {
+   "id": "mara",
+   "attribution": "The approved Prop Fiction model paragraph, from the project's owner principles (6 November 2026).",
+   "text": "Cal smiled when Nessa said they were still working out where to put the cabinet. Mara was glad they had left the counter as it was when he offered to fix it in place, since they could still move it if they needed the space. “Can you leave the dolly until ten?” she asked. “I can wait till ten,” he said, and put his hands in his pockets and stood outside rather than come in to solve the room for her.",
+   "profile": [
+    0.2698412698412698,
+    0.803764670019814,
+    0.43333333333333335,
+    0.014593521550697826,
+    0,
+    0,
+    0.33670033670033667
+   ],
+   "pairs": [
+    {
+     "pair": "mara-001",
+     "control": "A",
+     "to": 0,
+     "device": "A-lead",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation"
+     ],
+     "slot": 1,
+     "before": "",
+     "after": "Mara was glad they had left the counter as it was when he offered to fix it in place, since they could still move it if they needed the space.",
+     "converse_note": "the relation leads its paragraph"
+    },
+    {
+     "pair": "mara-002",
+     "control": "A",
+     "to": 0,
+     "device": "A-outcome",
+     "converse_stance": true,
+     "converse_fields": [
+      "Access",
+      "Presentation"
+     ],
+     "slot": 0,
+     "before": "Cal smiled when Nessa said they were still working out where to put the cabinet.",
+     "after": "As it turned out, Cal smiled when Nessa said they were still working out where to put the cabinet.",
+     "converse_note": "the act reported as an outcome"
+    },
+    {
+     "pair": "mara-003",
+     "control": "C",
+     "to": 0,
+     "device": "C-word",
+     "converse_stance": false,
+     "converse_fields": [
+      "Scope"
+     ],
+     "slot": 0,
+     "before": "Cal smiled when Nessa said they were still working out where to put the cabinet.",
+     "after": "Cal smiled when Nessa said they were still working out where to put the furniture.",
+     "converse_note": "\"cabinet\" is named by the broader \"furniture\", the dictionary's term above it"
+    },
+    {
+     "pair": "mara-004",
+     "control": "C",
+     "to": 1,
+     "device": "C+that",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation",
+      "Reader relation"
+     ],
+     "slot": 0,
+     "before": "Cal smiled when Nessa said they were still working out where to put the cabinet.",
+     "after": "Cal smiled when Nessa said they were still working out where to put that cabinet.",
+     "converse_note": "\"the cabinet\" pointed at as \"that cabinet\""
+    },
+    {
+     "pair": "mara-005",
+     "control": "C",
+     "to": 1,
+     "device": "C+that",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation",
+      "Reader relation"
+     ],
+     "slot": 1,
+     "before": "Mara was glad they had left the counter as it was when he offered to fix it in place, since they could still move it if they needed the space.",
+     "after": "Mara was glad they had left that counter as it was when he offered to fix it in place, since they could still move it if they needed the space.",
+     "converse_note": "\"the counter\" pointed at as \"that counter\""
+    },
+    {
+     "pair": "mara-006",
+     "control": "P",
+     "to": 1,
+     "device": "P+frame",
+     "converse_stance": true,
+     "converse_fields": [
+      "Reader relation",
+      "Agency",
+      "Access",
+      "Warrant"
+     ],
+     "slot": 0,
+     "before": "Cal smiled when Nessa said they were still working out where to put the cabinet.",
+     "after": "I see that Cal smiled when Nessa said they were still working out where to put the cabinet.",
+     "converse_note": "the narrator takes responsibility for the statement; no act is attributed to the narrator"
+    },
+    {
+     "pair": "mara-007",
+     "control": "P",
+     "to": 1,
+     "device": "P+frame",
+     "converse_stance": true,
+     "converse_fields": [
+      "Reader relation",
+      "Agency",
+      "Access",
+      "Warrant"
+     ],
+     "slot": 1,
+     "before": "Mara was glad they had left the counter as it was when he offered to fix it in place, since they could still move it if they needed the space.",
+     "after": "I note that Mara was glad they had left the counter as it was when he offered to fix it in place, since they could still move it if they needed the space.",
+     "converse_note": "the narrator takes responsibility for the statement; no act is attributed to the narrator"
+    },
+    {
+     "pair": "mara-008",
+     "control": "P",
+     "to": 1,
+     "device": "P+account",
+     "converse_stance": true,
+     "converse_fields": [
+      "Reader relation",
+      "Warrant"
+     ],
+     "slot": 2,
+     "before": "",
+     "after": "That is what I note.",
+     "converse_note": "the narrator closes on its own account"
+    },
+    {
+     "pair": "mara-009",
+     "control": "T",
+     "to": 1,
+     "device": "T+ask",
+     "converse_stance": false,
+     "converse_fields": [
+      "Alternatives",
+      "Consequence"
+     ],
+     "slot": 0,
+     "before": "",
+     "after": "Why did Cal smile?",
+     "converse_note": "a question the statement leaves open, asked in its own words"
+    },
+    {
+     "pair": "mara-010",
+     "control": "T",
+     "to": 1,
+     "device": "T+close",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation"
+     ],
+     "slot": 2,
+     "before": "",
+     "after": "What follows from this?",
+     "converse_note": "the finding opens onto the next question"
+    },
+    {
+     "pair": "mara-011",
+     "control": "J",
+     "to": 1,
+     "device": "J+word",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation"
+     ],
+     "slot": 1,
+     "before": "Mara was glad they had left the counter as it was when he offered to fix it in place, since they could still move it if they needed the space.",
+     "after": "Mara was glad they had left the counter as it was when he offered to fix it in place, since they could still move it if they required the space.",
+     "converse_note": "\"needed\" becomes the more exact \"required\", the dictionary's word for the same sense"
+    },
+    {
+     "pair": "mara-012",
+     "control": "J",
+     "to": 1,
+     "device": "J+relation",
+     "converse_stance": false,
+     "converse_fields": [
+      "Warrant",
+      "Presentation"
+     ],
+     "slot": 1,
+     "before": "Mara was glad they had left the counter as it was when he offered to fix it in place, since they could still move it if they required the space.",
+     "after": "Mara was glad they had left the counter as it was when he offered to fix it in place. The reason is that they could still move it if they required the space.",
+     "converse_note": "the ground the sentence gives (\"since\") is named as a ground"
+    },
+    {
+     "pair": "mara-013",
+     "control": "J",
+     "to": 1,
+     "device": "J+point",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation",
+      "Reader relation"
+     ],
+     "slot": 1,
+     "before": "Mara was glad they had left the counter as it was when he offered to fix it in place. The reason is that they could still move it if they required the space.",
+     "after": "Note that Mara was glad they had left the counter as it was when he offered to fix it in place. The reason is that they could still move it if they required the space.",
+     "converse_note": "the judgment is marked as the point"
+    },
+    {
+     "pair": "mara-014",
+     "control": "J",
+     "to": 1,
+     "device": "J+point",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation",
+      "Reader relation"
+     ],
+     "slot": 0,
+     "before": "Cal smiled when Nessa said they were still working out where to put the cabinet.",
+     "after": "Note that Cal smiled when Nessa said they were still working out where to put the cabinet.",
+     "converse_note": "the judgment is marked as the point"
+    }
+   ]
+  },
+  {
+   "id": "report",
+   "attribution": "Written for this demonstration: a plain report in short sentences with named agents.",
+   "text": "The committee met on Tuesday. The report was rejected by the chairman. Nobody objected. The budget was cut by the board, and the staff were told the next morning. The office was closed at noon.",
+   "profile": [
+    0.2857142857142857,
+    0.3874716553287981,
+    0,
+    0.6646519063432038,
+    0,
+    0,
+    0
+   ],
+   "pairs": [
+    {
+     "pair": "report-001",
+     "control": "A",
+     "to": 0,
+     "device": "A-nominal",
+     "converse_stance": false,
+     "converse_fields": [
+      "Agency",
+      "Presentation"
+     ],
+     "slot": 0,
+     "before": "The committee met on Tuesday.",
+     "after": "There was a meeting of the committee on Tuesday.",
+     "converse_note": "the act becomes a relation: there was such an event"
+    },
+    {
+     "pair": "report-002",
+     "control": "A",
+     "to": 0,
+     "device": "A-nominal",
+     "converse_stance": false,
+     "converse_fields": [
+      "Agency",
+      "Presentation"
+     ],
+     "slot": 2,
+     "before": "Nobody objected.",
+     "after": "There was no objection.",
+     "converse_note": "the act becomes a relation: there was such an event"
+    },
+    {
+     "pair": "report-003",
+     "control": "A",
+     "to": 0,
+     "device": "A-setting",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation"
+     ],
+     "slot": 4,
+     "before": "The office was closed at noon.",
+     "after": "At noon, the office was closed.",
+     "converse_note": "the time or place comes before the act"
+    },
+    {
+     "pair": "report-004",
+     "control": "A",
+     "to": 0,
+     "device": "A-outcome",
+     "converse_stance": true,
+     "converse_fields": [
+      "Access",
+      "Presentation"
+     ],
+     "slot": 2,
+     "before": "There was no objection.",
+     "after": "As it turned out, there was no objection.",
+     "converse_note": "the act reported as an outcome"
+    },
+    {
+     "pair": "report-005",
+     "control": "A",
+     "to": 0,
+     "device": "A-outcome",
+     "converse_stance": true,
+     "converse_fields": [
+      "Access",
+      "Presentation"
+     ],
+     "slot": 0,
+     "before": "There was a meeting of the committee on Tuesday.",
+     "after": "In the event, there was a meeting of the committee on Tuesday.",
+     "converse_note": "the act reported as an outcome"
+    },
+    {
+     "pair": "report-006",
+     "control": "A",
+     "to": 1,
+     "device": "A+activate",
+     "converse_stance": false,
+     "converse_fields": [
+      "Agency",
+      "Presentation"
+     ],
+     "slot": 1,
+     "before": "The report was rejected by the chairman.",
+     "after": "The chairman rejected the report.",
+     "converse_note": "passive to active: \"the chairman\" acts"
+    },
+    {
+     "pair": "report-007",
+     "control": "A",
+     "to": 1,
+     "device": "A+activate",
+     "converse_stance": false,
+     "converse_fields": [
+      "Agency",
+      "Presentation"
+     ],
+     "slot": 3,
+     "before": "The budget was cut by the board, and the staff were told the next morning.",
+     "after": "The board cut the budget, and the staff were told the next morning.",
+     "converse_note": "passive to active: \"the board\" acts"
+    },
+    {
+     "pair": "report-008",
+     "control": "A",
+     "to": 1,
+     "device": "A+steps",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation"
+     ],
+     "slot": 0,
+     "before": "The committee met on Tuesday.",
+     "after": "First, the committee met on Tuesday.",
+     "converse_note": "the reasoning is taken step by step"
+    },
+    {
+     "pair": "report-009",
+     "control": "A",
+     "to": 1,
+     "device": "A+steps",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation"
+     ],
+     "slot": 1,
+     "before": "The chairman rejected the report.",
+     "after": "Second, the chairman rejected the report.",
+     "converse_note": "the reasoning is taken step by step"
+    },
+    {
+     "pair": "report-010",
+     "control": "A",
+     "to": 1,
+     "device": "A+steps",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation"
+     ],
+     "slot": 2,
+     "before": "Nobody objected.",
+     "after": "Third, nobody objected.",
+     "converse_note": "the reasoning is taken step by step"
+    },
+    {
+     "pair": "report-011",
+     "control": "A",
+     "to": 1,
+     "device": "A+steps",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation"
+     ],
+     "slot": 3,
+     "before": "The board cut the budget, and the staff were told the next morning.",
+     "after": "Fourth, the board cut the budget, and the staff were told the next morning.",
+     "converse_note": "the reasoning is taken step by step"
+    },
+    {
+     "pair": "report-012",
+     "control": "A",
+     "to": 1,
+     "device": "A+steps",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation"
+     ],
+     "slot": 4,
+     "before": "The office was closed at noon.",
+     "after": "Fifth, the office was closed at noon.",
+     "converse_note": "the reasoning is taken step by step"
+    },
+    {
+     "pair": "report-013",
+     "control": "C",
+     "to": 1,
+     "device": "C+that",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation",
+      "Reader relation"
+     ],
+     "slot": 4,
+     "before": "The office was closed at noon.",
+     "after": "That office was closed at noon.",
+     "converse_note": "\"the office\" pointed at as \"that office\""
+    },
+    {
+     "pair": "report-014",
+     "control": "P",
+     "to": 1,
+     "device": "P+frame",
+     "converse_stance": true,
+     "converse_fields": [
+      "Reader relation",
+      "Agency",
+      "Access",
+      "Warrant"
+     ],
+     "slot": 0,
+     "before": "The committee met on Tuesday.",
+     "after": "Our finding: the committee met on Tuesday.",
+     "converse_note": "the narrator takes responsibility for the statement; no act is attributed to the narrator"
+    },
+    {
+     "pair": "report-015",
+     "control": "P",
+     "to": 1,
+     "device": "P+frame",
+     "converse_stance": true,
+     "converse_fields": [
+      "Reader relation",
+      "Agency",
+      "Access",
+      "Warrant"
+     ],
+     "slot": 3,
+     "before": "The budget was cut by the board, and the staff were told the next morning.",
+     "after": "We find: the budget was cut by the board, and the staff were told the next morning.",
+     "converse_note": "the narrator takes responsibility for the statement; no act is attributed to the narrator"
+    },
+    {
+     "pair": "report-016",
+     "control": "P",
+     "to": 1,
+     "device": "P+frame",
+     "converse_stance": true,
+     "converse_fields": [
+      "Reader relation",
+      "Agency",
+      "Access",
+      "Warrant"
+     ],
+     "slot": 1,
+     "before": "The report was rejected by the chairman.",
+     "after": "Our finding: the report was rejected by the chairman.",
+     "converse_note": "the narrator takes responsibility for the statement; no act is attributed to the narrator"
+    },
+    {
+     "pair": "report-017",
+     "control": "P",
+     "to": 1,
+     "device": "P+frame",
+     "converse_stance": true,
+     "converse_fields": [
+      "Reader relation",
+      "Agency",
+      "Access",
+      "Warrant"
+     ],
+     "slot": 2,
+     "before": "Nobody objected.",
+     "after": "We find: nobody objected.",
+     "converse_note": "the narrator takes responsibility for the statement; no act is attributed to the narrator"
+    },
+    {
+     "pair": "report-018",
+     "control": "P",
+     "to": 1,
+     "device": "P+frame",
+     "converse_stance": true,
+     "converse_fields": [
+      "Reader relation",
+      "Agency",
+      "Access",
+      "Warrant"
+     ],
+     "slot": 4,
+     "before": "The office was closed at noon.",
+     "after": "Our finding: the office was closed at noon.",
+     "converse_note": "the narrator takes responsibility for the statement; no act is attributed to the narrator"
+    },
+    {
+     "pair": "report-019",
+     "control": "P",
+     "to": 1,
+     "device": "P+account",
+     "converse_stance": true,
+     "converse_fields": [
+      "Reader relation",
+      "Warrant"
+     ],
+     "slot": 4,
+     "before": "",
+     "after": "That is all. We stand by it.",
+     "converse_note": "the narrator closes on its own account"
+    },
+    {
+     "pair": "report-020",
+     "control": "R",
+     "to": 0,
+     "device": "R-join",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation"
+     ],
+     "slot": 1,
+     "before": "The report was rejected by the chairman. Nobody objected.",
+     "after": "The report was rejected by the chairman; nobody objected.",
+     "converse_note": "two short statements joined with a semicolon"
+    },
+    {
+     "pair": "report-021",
+     "control": "R",
+     "to": 0,
+     "device": "R-join",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation"
+     ],
+     "slot": 3,
+     "before": "The budget was cut by the board, and the staff were told the next morning. The office was closed at noon.",
+     "after": "The budget was cut by the board, and the staff were told the next morning; the office was closed at noon.",
+     "converse_note": "two short statements joined with a semicolon"
+    },
+    {
+     "pair": "report-022",
+     "control": "R",
+     "to": 1,
+     "device": "R+split",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation"
+     ],
+     "slot": 3,
+     "before": "The budget was cut by the board, and the staff were told the next morning.",
+     "after": "The budget was cut by the board. The staff were told the next morning.",
+     "converse_note": "split where both halves stand as sentences"
+    },
+    {
+     "pair": "report-023",
+     "control": "F",
+     "to": 1,
+     "device": "F+figure",
+     "converse_stance": false,
+     "converse_fields": [
+      "Agency",
+      "Presentation"
+     ],
+     "slot": 1,
+     "before": "The report was rejected by the chairman.",
+     "after": "The report went before the chairman and came back rejected. The chairman rejected it.",
+     "converse_note": "the thing acted on takes a journey through the act, and who did it is stated"
+    },
+    {
+     "pair": "report-024",
+     "control": "F",
+     "to": 1,
+     "device": "F+figure",
+     "converse_stance": false,
+     "converse_fields": [
+      "Agency",
+      "Presentation"
+     ],
+     "slot": 3,
+     "before": "The budget was cut by the board, and the staff were told the next morning.",
+     "after": "The budget yielded to the board and came away cut, and the staff were told the next morning.",
+     "converse_note": "the thing acted on takes a journey through the act"
+    },
+    {
+     "pair": "report-025",
+     "control": "F",
+     "to": 1,
+     "device": "F+witness",
+     "converse_stance": false,
+     "converse_fields": [
+      "Agency",
+      "Presentation"
+     ],
+     "slot": 4,
+     "before": "The office was closed at noon.",
+     "after": "Noon watched the office being closed, so to speak.",
+     "converse_note": "\"noon\" is made to look on; who acts stays as the text has it, and the figure is named as a figure"
+    },
+    {
+     "pair": "report-026",
+     "control": "T",
+     "to": 1,
+     "device": "T+ask",
+     "converse_stance": false,
+     "converse_fields": [
+      "Alternatives",
+      "Consequence"
+     ],
+     "slot": 4,
+     "before": "",
+     "after": "How so?",
+     "converse_note": "a question the statement leaves open, asked in its own words"
+    },
+    {
+     "pair": "report-027",
+     "control": "T",
+     "to": 1,
+     "device": "T+ask",
+     "converse_stance": false,
+     "converse_fields": [
+      "Alternatives",
+      "Consequence"
+     ],
+     "slot": 1,
+     "before": "",
+     "after": "And why?",
+     "converse_note": "a question the statement leaves open, asked in its own words"
+    },
+    {
+     "pair": "report-028",
+     "control": "T",
+     "to": 1,
+     "device": "T+ask",
+     "converse_stance": false,
+     "converse_fields": [
+      "Alternatives",
+      "Consequence"
+     ],
+     "slot": 0,
+     "before": "",
+     "after": "Why?",
+     "converse_note": "a question the statement leaves open, asked in its own words"
+    },
+    {
+     "pair": "report-029",
+     "control": "T",
+     "to": 1,
+     "device": "T+close",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation"
+     ],
+     "slot": 4,
+     "before": "",
+     "after": "And then?",
+     "converse_note": "the finding opens onto the next question"
+    },
+    {
+     "pair": "report-030",
+     "control": "J",
+     "to": 1,
+     "device": "J+concept",
+     "converse_stance": false,
+     "converse_fields": [
+      "Scope"
+     ],
+     "slot": 3,
+     "before": "The budget was cut by the board, and the staff were told the next morning.",
+     "after": "The budget — a sum of money allocated for a particular purpose — was cut by the board, and the staff were told the next morning.",
+     "converse_note": "the dictionary's sense of \"budget\""
+    },
+    {
+     "pair": "report-031",
+     "control": "J",
+     "to": 1,
+     "device": "J+point",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation",
+      "Reader relation"
+     ],
+     "slot": 3,
+     "before": "The budget — a sum of money allocated for a particular purpose — was cut by the board, and the staff were told the next morning.",
+     "after": "The point: the budget — a sum of money allocated for a particular purpose — was cut by the board, and the staff were told the next morning.",
+     "converse_note": "the judgment is marked as the point"
+    },
+    {
+     "pair": "report-032",
+     "control": "J",
+     "to": 1,
+     "device": "J+point",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation",
+      "Reader relation"
+     ],
+     "slot": 1,
+     "before": "The report was rejected by the chairman.",
+     "after": "The point: the report was rejected by the chairman.",
+     "converse_note": "the judgment is marked as the point"
+    }
+   ]
+  },
+  {
+   "id": "promise",
+   "attribution": "Written for this demonstration: a short argument that states its contrasts.",
+   "text": "A promise creates an obligation because the promiser invites reliance. The invitation is not a prediction. A prediction can be wrong without fault, but a broken promise wrongs the person who relied on it. The difference lies in what the speaker has undertaken, not in what the hearer expected.",
+   "profile": [
+    0,
+    0,
+    0,
+    0.2491240216797286,
+    0,
+    0,
+    1
+   ],
+   "pairs": [
+    {
+     "pair": "promise-001",
+     "control": "A",
+     "to": 1,
+     "device": "A+steps",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation"
+     ],
+     "slot": 0,
+     "before": "A promise creates an obligation because the promiser invites reliance.",
+     "after": "First, a promise creates an obligation because the promiser invites reliance.",
+     "converse_note": "the reasoning is taken step by step"
+    },
+    {
+     "pair": "promise-002",
+     "control": "A",
+     "to": 1,
+     "device": "A+steps",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation"
+     ],
+     "slot": 1,
+     "before": "The invitation is not a prediction.",
+     "after": "Second, the invitation is not a prediction.",
+     "converse_note": "the reasoning is taken step by step"
+    },
+    {
+     "pair": "promise-003",
+     "control": "A",
+     "to": 1,
+     "device": "A+steps",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation"
+     ],
+     "slot": 2,
+     "before": "A prediction can be wrong without fault, but a broken promise wrongs the person who relied on it.",
+     "after": "Third, a prediction can be wrong without fault, but a broken promise wrongs the person who relied on it.",
+     "converse_note": "the reasoning is taken step by step"
+    },
+    {
+     "pair": "promise-004",
+     "control": "A",
+     "to": 1,
+     "device": "A+steps",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation"
+     ],
+     "slot": 3,
+     "before": "The difference lies in what the speaker has undertaken, not in what the hearer expected.",
+     "after": "Fourth, the difference lies in what the speaker has undertaken, not in what the hearer expected.",
+     "converse_note": "the reasoning is taken step by step"
+    },
+    {
+     "pair": "promise-005",
+     "control": "C",
+     "to": 1,
+     "device": "C+that",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation",
+      "Reader relation"
+     ],
+     "slot": 1,
+     "before": "The invitation is not a prediction.",
+     "after": "That invitation is not a prediction.",
+     "converse_note": "\"the invitation\" pointed at as \"that invitation\""
+    },
+    {
+     "pair": "promise-006",
+     "control": "P",
+     "to": 1,
+     "device": "P+frame",
+     "converse_stance": true,
+     "converse_fields": [
+      "Reader relation",
+      "Agency",
+      "Access",
+      "Warrant"
+     ],
+     "slot": 0,
+     "before": "A promise creates an obligation because the promiser invites reliance.",
+     "after": "We hold that a promise creates an obligation because the promiser invites reliance.",
+     "converse_note": "the narrator takes responsibility for the statement; no act is attributed to the narrator"
+    },
+    {
+     "pair": "promise-007",
+     "control": "P",
+     "to": 1,
+     "device": "P+frame",
+     "converse_stance": true,
+     "converse_fields": [
+      "Reader relation",
+      "Agency",
+      "Access",
+      "Warrant"
+     ],
+     "slot": 3,
+     "before": "The difference lies in what the speaker has undertaken, not in what the hearer expected.",
+     "after": "We judge that the difference lies in what the speaker has undertaken, not in what the hearer expected.",
+     "converse_note": "the narrator takes responsibility for the statement; no act is attributed to the narrator"
+    },
+    {
+     "pair": "promise-008",
+     "control": "P",
+     "to": 1,
+     "device": "P+frame",
+     "converse_stance": true,
+     "converse_fields": [
+      "Reader relation",
+      "Agency",
+      "Access",
+      "Warrant"
+     ],
+     "slot": 1,
+     "before": "The invitation is not a prediction.",
+     "after": "We hold that the invitation is not a prediction.",
+     "converse_note": "the narrator takes responsibility for the statement; no act is attributed to the narrator"
+    },
+    {
+     "pair": "promise-009",
+     "control": "P",
+     "to": 1,
+     "device": "P+frame",
+     "converse_stance": true,
+     "converse_fields": [
+      "Reader relation",
+      "Agency",
+      "Access",
+      "Warrant"
+     ],
+     "slot": 2,
+     "before": "A prediction can be wrong without fault, but a broken promise wrongs the person who relied on it.",
+     "after": "We judge that a prediction can be wrong without fault, but a broken promise wrongs the person who relied on it.",
+     "converse_note": "the narrator takes responsibility for the statement; no act is attributed to the narrator"
+    },
+    {
+     "pair": "promise-010",
+     "control": "P",
+     "to": 1,
+     "device": "P+account",
+     "converse_stance": true,
+     "converse_fields": [
+      "Reader relation",
+      "Warrant"
+     ],
+     "slot": 3,
+     "before": "",
+     "after": "That is our judgment.",
+     "converse_note": "the narrator closes on its own account"
+    },
+    {
+     "pair": "promise-011",
+     "control": "R",
+     "to": 0,
+     "device": "R-join",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation"
+     ],
+     "slot": 0,
+     "before": "A promise creates an obligation because the promiser invites reliance. The invitation is not a prediction.",
+     "after": "A promise creates an obligation because the promiser invites reliance; the invitation is not a prediction.",
+     "converse_note": "two short statements joined with a semicolon"
+    },
+    {
+     "pair": "promise-012",
+     "control": "R",
+     "to": 1,
+     "device": "R+split",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation"
+     ],
+     "slot": 2,
+     "before": "A prediction can be wrong without fault, but a broken promise wrongs the person who relied on it.",
+     "after": "A prediction can be wrong without fault. But a broken promise wrongs the person who relied on it.",
+     "converse_note": "split where both halves stand as sentences"
+    },
+    {
+     "pair": "promise-013",
+     "control": "T",
+     "to": 1,
+     "device": "T+sofar",
+     "converse_stance": true,
+     "converse_fields": [
+      "Warrant",
+      "Reflexive reach"
+     ],
+     "slot": 3,
+     "before": "The difference lies in what the speaker has undertaken, not in what the hearer expected.",
+     "after": "For now, the difference lies in what the speaker has undertaken, not in what the hearer expected.",
+     "converse_note": "the finding is held open"
+    },
+    {
+     "pair": "promise-014",
+     "control": "T",
+     "to": 1,
+     "device": "T+ask",
+     "converse_stance": false,
+     "converse_fields": [
+      "Alternatives",
+      "Consequence"
+     ],
+     "slot": 0,
+     "before": "",
+     "after": "On what ground does the promise create an obligation?",
+     "converse_note": "a question the statement leaves open, asked in its own words"
+    },
+    {
+     "pair": "promise-015",
+     "control": "T",
+     "to": 1,
+     "device": "T+close",
+     "converse_stance": false,
+     "converse_fields": [
+      "Presentation"
+     ],
+     "slot": 3,
+     "before": "",
+     "after": "What follows from this, and on what ground?",
+     "converse_note": "the finding opens onto the next question"
+    }
+   ]
+  }
+ ]
+}
