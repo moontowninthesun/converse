@@ -11,5 +11,5 @@ The text is analysed once, with a rule-based parser. Moving the target switches 
 ## Credits and licences
 
 - **Parser:** [compromise](https://github.com/spencermountain/compromise) 14.14.0 by Spencer Kelly, MIT License. Its licence notice is included in the page source.
-- **Dictionary:** [Open English WordNet](https://github.com/globalwordnet/english-wordnet) 2024, CC BY 4.0. Pruned to single-word lemmas, with glosses shortened.
+- **Dictionary:** [Open English WordNet](https://github.com/globalwordnet/english-wordnet) 2024, CC BY 4.0. Pruned to single-word lemmas and phrasal verbs, with glosses shortened.
 - **Sample texts:** the openings of public-domain works from [Project Gutenberg](https://www.gutenberg.org/), two short texts written for this demonstration, and a model paragraph from the project.
