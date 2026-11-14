@@ -462,15 +462,24 @@ function paragraphs(text) {
 function parse(text) {
   const doc = nlp(text);
   const json = doc.json({ terms: { tags: true, normal: true, text: true, pre: true, post: true, implicit: true } });
-  const sentences = json.map((s, i) => makeSentence(s, i));
+  const sentences = json.map((s, i) => makeSentence(s, i, text));
   return { text, sentences };
 }
 
-function makeSentence(s, index) {
+function makeSentence(s, index, original = s.text) {
   let terms = s.terms.map((t, i) => ({
     i, text: t.text, pre: t.pre || '', post: t.post || '', normal: t.normal || t.text.toLowerCase(),
     tags: new Set(t.tags || []), implicit: t.implicit || '',
   }));
+  // the parser stores an unspaced dash between two words ("there—silent", "veld-kost"—the) as a hyphen, in the words and
+  // sometimes in the sentence too; where the text as written has a dash there, it is put back, so a rebuilt sentence keeps
+  // its punctuation and a true hyphen ("veld-kost") stays a hyphen (corrected 13 November 2026, after the second corpus test)
+  let dashed = false;
+  if (/[—–]/.test(original)) for (let i = 0; i + 1 < terms.length; i++) {
+    const t = terms[i], nx = terms[i + 1]; if (!/-$/.test(t.post) || /\s/.test(t.post)) continue;
+    for (const dash of ['—', '–']) { const post = t.post.replace(/-$/, dash); if (original.includes(t.text + post + nx.pre + nx.text)) { t.post = post; dashed = true; break; } }
+  }
+  if (dashed) s = { ...s, text: terms.map(t => t.pre + t.text + t.post).join('') };
   terms = repairTags(terms);
   const words = terms.filter(t => /\w/.test(t.text));
   const sent = {
@@ -1907,8 +1916,12 @@ function nominalise(s) {
   // a verb that reports a claim, or takes a clause, is not an event to nominalise ("Berger argues that …")
   if (/^(say|tell|ask|claim|report|argue|insist|write|state|assert|suggest|contend|maintain|note|observe|explain|believe|think|know|hold|propose|show|demonstrate|conclude|deny|admit|acknowledge|announce|declare|reply|answer|add|remark|comment)$/.test(v) || /^(that|whether|if|what|why|how|who|which|when|where)$/i.test((T[d.mainVerbIdx + 1] || {}).normal || '')) return null;
   const nobody = /^(nobody|no one|nothing)$/i.test(subj.text); if (subj.pronoun && !nobody) return null;
+  // the agent is the whole subject, not its head alone, and nothing between it and the verb may be lost (corrected 13
+  // November 2026, after the second corpus test: "Something more than religious enthusiasm sent …" lost all but "Something")
+  if (d.verbIdx !== d.subjectIdx + 1) return null;
   const obj = objectNP(d); const restStart = obj ? obj.end : d.mainVerbIdx + 1;
   if (restStart < T.length && !T[restStart].tags.has('Preposition') && !/^[.!?]/.test(T[restStart].text)) return null;
+  if (obj && restStart < T.length && T[restStart].normal === 'of') return null;   // the object goes on ("a procession of crusaders"): the agent cannot go inside it
   const tail = termsText(T.slice(restStart)).replace(/[.!?]$/, '');
   const be = d.tense === 'past' ? 'was' : 'is'; const g = lex.synset(lex.senses(N, 'n')[0]);
   const by = DECISION.has(lex.verbClass(v)) ? 'by' : 'of';
@@ -2249,6 +2262,9 @@ function askOne(s) {
   if (NEGATION.test(s) || SPEECH.test(s)) return null;
   const d = parseOne(s); if (!d || d.multi || d.stative || d.modal || d.perfect || d.isQuestion || d.subjectIdx < 0 || d.mainVerbIdx < 0) return null;
   const subj = subjectNP(d); if (!subj) return null;
+  // the subject opens the clause, or follows a phrase set off by a comma: in "From the music-stand came a waltz" the verb
+  // comes first, and the word before it is no subject (corrected 13 November 2026, after the second corpus test)
+  if (d.subjectStart > 0 && !/,\s*$/.test(d.terms[d.subjectStart - 1].post)) return null;
   if (subj.pronoun && !['he', 'she', 'they'].includes(subj.head.normal)) return null;
   const S = lowerStart(subj.text).replace(/^(a|an)\s+/i, 'the '); if (wc(S) > 5 || FIRST_PERSON_PRON.test(S)) return null;
   const T = d.terms; const vi = d.verbIdx, mi = d.mainVerbIdx; if (vi < d.subjectIdx) return null;
@@ -2552,7 +2568,9 @@ fam({ id: 'R-join', control: 'R', dir: -1, stage: 'join', rank: 0, name: 'Join s
 fam({ id: 'R-undash', control: 'R', dir: -1, stage: 'lexical', rank: 1, name: 'Smooth the interruptions',
   find: doc => doc.slots.filter(s => !s.speech && /—|--/.test(s.text)).map(s => ({ slot: s.i })),
   apply: (out) => { for (let k = 0; k < out.length; k++) { let s = out[k]; if (!/—|--/.test(s)) continue;
-    s = s.replace(/\s*(?:—|--)\s*([^—]{1,60}?)\s*(?:—|--)\s*/, ', $1, ').replace(/\s*(?:—|--)\s*/g, '; '); s = tidy(s); const o = [...out]; o[k] = s; return one(o, [], 'dashes become commas and semicolons'); } return null; } });
+    // a lone dash before a clause becomes a semicolon; before a phrase with no verb of its own ("the pope—Gregory II") it
+    // becomes a comma, since a semicolon must join clauses (corrected 13 November 2026, after the second corpus test)
+    s = s.replace(/\s*(?:—|--)\s*([^—]{1,60}?)\s*(?:—|--)\s*/, ', $1, ').replace(/\s*(?:—|--)\s*([^—]*?)(?=\s*(?:—|--)|$)/g, (m0, rest) => { const p = parseOne(endWith(capitalise(rest.trim() || 'x'))); return (p && p.verbIdx >= 0 ? '; ' : ', ') + rest; }); s = tidy(s); const o = [...out]; o[k] = s; return one(o, [], 'dashes become commas and semicolons'); } return null; } });
 
 fam({ id: 'R-unparen', control: 'R', dir: -1, stage: 'lexical', rank: 2, name: 'Fold the parenthesis in',
   find: doc => doc.slots.filter(s => !s.speech && (s.text.match(/\(([^()]{3,160})\)/g) || []).some(isAside)).map(s => ({ slot: s.i })),   // an aside, not a reference
@@ -2597,10 +2615,11 @@ fam({ id: 'T+remains', control: 'T', dir: 1, stage: 'insert', rank: 1, min: 0.35
   apply: (out, inst) => one([], [...frameWords('what remains to be'), ins(inst.data.pp, 'text')], 'the negated finding asks what remains, in its own verb', { after: [`What remains to be ${inst.data.pp}?`] }) });
 const WHETHER = /\b(?:(?:do|does|did)(?: not|n't) know|(?:is|was|are|were|remains|remained) (?:unclear|uncertain|unknown|open|undecided|unsettled|in doubt)|(?:cannot|can't|could not|couldn't) (?:tell|say|be sure)|(?:no one|nobody) knows|it (?:is|was) not (?:known|clear)|(?:doubt|doubted|wonder|wondered|ask|asked|question|questioned)) (whether|if) ([^,;.?!"“”]{4,120})/i;
 fam({ id: 'T+test', control: 'T', dir: 1, stage: 'insert', rank: 0, min: 0.15, name: 'Ask what would settle it',
-  find: doc => doc.slots.filter(s => !s.speech && !s.question && WHETHER.test(s.text) && !(doc.slots[s.i + 1] && doc.slots[s.i + 1].question)).map(s => { const m = s.text.match(WHETHER); return { slot: s.i, data: { clause: m[2].trim() } }; }),
+  find: doc => doc.slots.filter(s => !s.speech && !s.question && WHETHER.test(s.text) && !(doc.slots[s.i + 1] && doc.slots[s.i + 1].question)).map(s => { const m = s.text.match(WHETHER); return { slot: s.i, data: { clause: m[2].trim(), conn: m[1].toLowerCase() } }; }),
   apply: (out, inst, ctx) => { const c = inst.data.clause; const L = lead(ctx.reg, ['J', 'A']);
     const head = L === 'J' ? 'What evidence would settle whether' : L === 'A' ? 'What test would show whether' : 'What would show whether';
-    return one([], frameWords(head.replace(/ whether$/, '')), 'the uncertainty the text states becomes the question of what would settle it', { after: [`${head} ${c}?`] }); } });
+    // "whether" is the text's own word only when the text used it; after "wondered if" it is the frame's, and declared
+    return one([], frameWords(inst.data.conn === 'whether' ? head.replace(/ whether$/, '') : head), 'the uncertainty the text states becomes the question of what would settle it', { after: [`${head} ${c}?`] }); } });
 fam({ id: 'T+ask', control: 'T', dir: 1, stage: 'insert', rank: 1, min: 0.2, name: 'Ask what the act leaves open',
   find: doc => doc.slots.filter(s => s.statement && !s.speech && !(doc.slots[s.i + 1] && doc.slots[s.i + 1].question) && askParts(s.text)).map(s => ({ slot: s.i, rank: (doc.slots.length - 1 - s.i) / 100 })).sort((a, b) => a.rank - b.rank).slice(0, 3),
   apply: (out, inst, ctx) => { const q = askParts(ctx.doc.slots[inst.slot].text); if (!q) return null; const r = realiseAsk(q, ctx.reg, ctx.n);
